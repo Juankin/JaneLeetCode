@@ -8,79 +8,34 @@
 
 #import <Foundation/Foundation.h>
 
+@interface ListNode : NSObject
+
+@property (nonatomic, assign) NSInteger val;
+@property (nonatomic, strong) ListNode *next;
+
+@end
+
+@implementation ListNode
+@end
 /*
-题目描述
-3. 无重复字符的最长子串
-给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-
-示例 1:   输入: "abcabcbb"  输出: 3   解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
-示例 2:   输入: "bbbbb"     输出: 1   解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
-示例 3:   输入: "pwwkew"    输出: 3   解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
-请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
-*/
-NSInteger maxLengthOfSubString(NSString *string) {
-      NSString *string = @"ssasa";
-
-        NSInteger letfIndicator = 0;
-
-        NSInteger longest = 0;
-
-        NSMutableSet *strSet = [NSMutableSet set];
-
-        //字符串转换为单字符数组
-
-        NSMutableArray *charsArray = @[].mutableCopy;
-
-        for (NSInteger i = 0; i < string.length; i++) {
-
-            if (i < string.length) {
-
-                NSString *str = [string substringWithRange:NSMakeRange(i,1)];
-
-                [charsArray addObject:str];
-
-            }
-
-        }
-
-        NSLog(@"charsArray = %@",charsArray);
-
-        for (int i = 0; i < [charsArray count]; i++) {
-
-            NSString *indexStr = charsArray[i];
-
-            if ([strSet containsObject:indexStr]) {
-
-                longest = MAX(longest,(i - letfIndicator));
-
-                while (![charsArray[letfIndicator] isEqualToString:indexStr]) {
-
-                    [strSet removeObject:charsArray[letfIndicator]];
-
-                    letfIndicator++;
-
-                }
-
-                letfIndicator++;
-
-            }else{
-
-                [strSet addObject:indexStr];
-
-            }
-
-        }
-
-        NSInteger maxLength = MAX(longest,[charsArray count] - letfIndicator);
-
-        NSLog(@"maxLength = %ld",maxLength);
-  
-    return 0;
+ 2. 两数相加
+ 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
+ 示例：
+ 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+ 输出：7 -> 0 -> 8
+ 原因：342 + 465 = 807
+ */
+ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+    ListNode *resultNode = [[ListNode alloc] init];
+    
+    return resultNode;
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        maxLengthOfSubString(@"abcabcbb");
+        maxLengthOfSubString(@"bbbbb");
+        maxLengthOfSubString(@"pwwkew");
 //        NSLog(@"%d, %d, %d",mid1,mid2,mid3);
     }
     return 0;

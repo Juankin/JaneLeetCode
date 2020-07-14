@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E7350B924BCB9D000F5CFB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7350B824BCB9D000F5CFB4 /* main.m */; };
-		0E7350C124BCC1EB00F5CFB4 /* main-无重复字符的最长子串.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7350BF24BCC1EB00F5CFB4 /* main-无重复字符的最长子串.m */; };
-		0E7350C224BCC1EB00F5CFB4 /* main-求三个数的中位数.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7350C024BCC1EB00F5CFB4 /* main-求三个数的中位数.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,9 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7350C224BCC1EB00F5CFB4 /* main-求三个数的中位数.m in Sources */,
 				0E7350B924BCB9D000F5CFB4 /* main.m in Sources */,
-				0E7350C124BCC1EB00F5CFB4 /* main-无重复字符的最长子串.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

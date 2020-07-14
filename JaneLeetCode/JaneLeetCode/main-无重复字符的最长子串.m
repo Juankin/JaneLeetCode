@@ -19,36 +19,39 @@
 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 */
 NSInteger maxLengthOfSubString(NSString *string) {
-    return 0;
-}
-
-
-/*
-  不能使用任何的API；时间复杂度O(1)，空间复杂度O(1)
-  例如：3、5、2；返回3
- */
-int middle(int a, int b, int c)
-{
-    int temp = 0;
-    if (a > b) {
-        temp = a; a = b; b = temp;
+    if(string.length == 0) return 0;
+    NSMutableSet *stringSet = [NSMutableSet set];
+    NSInteger maxStr = 0;
+    NSInteger left = 0;
+    NSMutableArray *charsArray = @[].mutableCopy;
+    for (NSInteger i = 0; i < string.length; i++) {
+        if (i < string.length) {
+            [charsArray addObject:[string substringWithRange:NSMakeRange(i, 1)]];
+        }
     }
-    if (a > c) {
-        temp = a; a = c; c = temp;
+    for (int i = 0; i < charsArray.count; i++) {
+        if ([stringSet containsObject:charsArray[i]]) {
+            maxStr = MAX(maxStr, (i - left));
+            while (![charsArray[left] isEqualToString:charsArray[i]]) {
+                [stringSet removeObject:charsArray[left]];
+                left++;
+            }
+            left++;
+        } else {
+            [stringSet addObject:charsArray[i]];
+        }
     }
-    if (b > c) {
-        temp = b; b = c; c = temp;
-    }
-    
-    return b;
+    NSInteger maxLegth = MAX(maxStr, charsArray.count - left);
+    NSLog(@"maxLength ===%ld，最长子串为：%@",(long)maxLegth,[stringSet description]);
+  
+    return maxLegth;
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int mid1 = middle(1, 3, 2);
-        int mid2= middle(9, 10, 8);
-        int mid3= middle(0, 0, 1);
-        NSLog(@"%d, %d, %d",mid1,mid2,mid3);
+        maxLengthOfSubString(@"abcabcbb");
+        maxLengthOfSubString(@"bbbbb");
+        maxLengthOfSubString(@"pwwkew");
     }
     return 0;
 }

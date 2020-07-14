@@ -27,14 +27,14 @@ int middle(int a, int b, int c)
     
     return b;
 }
-
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        int mid1 = middle(1, 3, 2);
-        int mid2= middle(9, 10, 8);
-        int mid3= middle(0, 0, 1);
-        NSLog(@"%d, %d, %d",mid1,mid2,mid3);
-    }
-    return 0;
-}
+//
+//int main(int argc, const char * argv[]) {
+//    @autoreleasepool {
+//        int mid1 = middle(1, 3, 2);
+//        int mid2= middle(9, 10, 8);
+//        int mid3= middle(0, 0, 1);
+//        NSLog(@"%d, %d, %d",mid1,mid2,mid3);
+//    }
+//    return 0;
+//}
 
