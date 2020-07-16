@@ -23,10 +23,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E33AC6A24C0B87200F2ACCB /* main的副本2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本2.m"; sourceTree = "<group>"; };
+		0E33AC6B24C0B87200F2ACCB /* main的副本.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本.m"; sourceTree = "<group>"; };
+		0E33AC6C24C0B87200F2ACCB /* main的副本3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本3.m"; sourceTree = "<group>"; };
+		0E33AC6D24C0B87200F2ACCB /* main-合并两个有序链表.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-合并两个有序链表.m"; sourceTree = "<group>"; };
 		0E7350B524BCB9D000F5CFB4 /* JaneLeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JaneLeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7350B824BCB9D000F5CFB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E7350BF24BCC1EB00F5CFB4 /* main-无重复字符的最长子串.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-无重复字符的最长子串.m"; sourceTree = "<group>"; };
 		0E7350C024BCC1EB00F5CFB4 /* main-求三个数的中位数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-求三个数的中位数.m"; sourceTree = "<group>"; };
+		0EF3A4A024BF55D900C9AC83 /* main-循环队列.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-循环队列.m"; sourceTree = "<group>"; };
+		0EF3A4A124BF55D900C9AC83 /* main-爬楼梯-斐波那契数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-爬楼梯-斐波那契数.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				0E7350B824BCB9D000F5CFB4 /* main.m */,
+				0E33AC6B24C0B87200F2ACCB /* main的副本.m */,
+				0E33AC6A24C0B87200F2ACCB /* main的副本2.m */,
+				0E33AC6C24C0B87200F2ACCB /* main的副本3.m */,
+				0E33AC6D24C0B87200F2ACCB /* main-合并两个有序链表.m */,
+				0EF3A4A124BF55D900C9AC83 /* main-爬楼梯-斐波那契数.m */,
+				0EF3A4A024BF55D900C9AC83 /* main-循环队列.m */,
 				0E7350C024BCC1EB00F5CFB4 /* main-求三个数的中位数.m */,
 				0E7350BF24BCC1EB00F5CFB4 /* main-无重复字符的最长子串.m */,
 			);
