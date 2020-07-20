@@ -8,40 +8,72 @@
 
 #import <Foundation/Foundation.h>
 
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
  /*
- 88. 合并两个有序数组
- 给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。
- 
- 说明:
- 初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。
- 你可以假设 nums1 有足够的空间（空间大小大于或等于 m + n）来保存 nums2 中的元素。
- 
- 示例:输入:nums1 = [1,2,3,0,0,0], m = 3  nums2 = [2,5,6],       n = 3
- 输出: [1,2,2,3,5,6]
+  
  */
-void mergeTwoArray(NSMutableArray *nums1,NSInteger m, NSMutableArray *nums2, NSInteger n) {
-    NSInteger p1 = m - 1;
-    NSInteger p2 = n - 1;
-    NSInteger p = nums1.count - 1;
-    while (p1 >=0 && p2 >=0) {
-        if ([nums1[p1] integerValue]>= [nums2[p2] integerValue]) {
-            nums1[p--] = nums1[p1--];
-        } else {
-            nums1[p--] = nums2[p2--];
+struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
+    struct TreeNode *node = root;
+    struct TreeNode *newNode = (struct TreeNode *)malloc(sizeof(struct TreeNode));
+    while (node != NULL) {
+        if (val > node->val) { //插入到右子树
+            if (node->right == NULL) {
+                newNode->val = val;
+                node->right = newNode;
+                return root;
+            } else {
+                node = node->right;
+            }
+        } else { //插入到左子树
+            if (node->left == NULL) {
+                newNode->val = val;
+                node->left = newNode;
+                return root;
+            } else {
+                node = node->left;
+            }
         }
     }
-    while (p1 >= 0) {
-        nums1[p--] = nums1[p1--];
-    }
-    while (p2 >= 0) {
-        nums1[p--] = nums2[p2--];
-    }
-    NSLog(@"num1==%@",nums1.description);
+    newNode->val = val;
+    return newNode;
 }
+//
+//TreeNode insertIntoBST(TreeNode root, int val) {
+//    TreeNode node = root;
+//    while (node != null) {
+//        // insert into the right subtree
+//        if (val > node.val) {
+//            // insert right now
+//            if (node.right == null) {
+//                node.right = new TreeNode(val);
+//                return root;
+//            }
+//            else node = node.right;
+//        }
+//        // insert into the left subtree
+//        else {
+//            // insert right now
+//            if (node.left == null) {
+//                node.left = new TreeNode(val);
+//                return root;
+//            }
+//            else node = node.left;
+//        }
+//    }
+//    return new TreeNode(val);
+//}
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        mergeTwoArray(@[@1,@2,@3,@0,@0,@0].mutableCopy, 3, @[@2,@5,@6].mutableCopy, 3);
+        NSArray *subIndex =  subSort(@[@1,@2,@4,@7,@10,@11,@7,@12,@6,@7,@16,@18,@19]);
+        NSLog(@"subIndex==%@",subIndex.description);
     }
     return 0;
 }

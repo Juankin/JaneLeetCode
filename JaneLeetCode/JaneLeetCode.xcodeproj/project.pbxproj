@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E33AC6A24C0B87200F2ACCB /* main的副本2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本2.m"; sourceTree = "<group>"; };
+		0E33AC6A24C0B87200F2ACCB /* main-部分排序.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-部分排序.m"; sourceTree = "<group>"; };
 		0E33AC6D24C0B87200F2ACCB /* main-合并两个有序链表.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-合并两个有序链表.m"; sourceTree = "<group>"; };
 		0E7350B524BCB9D000F5CFB4 /* JaneLeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JaneLeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7350B824BCB9D000F5CFB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,6 +32,9 @@
 		0EF3A4A024BF55D900C9AC83 /* main-循环队列.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-循环队列.m"; sourceTree = "<group>"; };
 		0EF3A4A124BF55D900C9AC83 /* main-爬楼梯-斐波那契数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-爬楼梯-斐波那契数.m"; sourceTree = "<group>"; };
 		CC4B147F24C57D1A00E950B8 /* main-合并两个有序数组.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-合并两个有序数组.m"; sourceTree = "<group>"; };
+		CC4B148124C58EFA00E950B8 /* main的副本2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本2.m"; sourceTree = "<group>"; };
+		CC4B148224C58EFA00E950B8 /* main的副本3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本3.m"; sourceTree = "<group>"; };
+		CC4B148324C58EFA00E950B8 /* main-二叉搜索树中的插入操作.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-二叉搜索树中的插入操作.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +67,12 @@
 		0E7350B724BCB9D000F5CFB4 /* JaneLeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				CC4B148324C58EFA00E950B8 /* main-二叉搜索树中的插入操作.m */,
+				CC4B148124C58EFA00E950B8 /* main的副本2.m */,
+				CC4B148224C58EFA00E950B8 /* main的副本3.m */,
 				CC4B147F24C57D1A00E950B8 /* main-合并两个有序数组.m */,
 				0E7350B824BCB9D000F5CFB4 /* main.m */,
-				0E33AC6A24C0B87200F2ACCB /* main的副本2.m */,
+				0E33AC6A24C0B87200F2ACCB /* main-部分排序.m */,
 				0E33AC6D24C0B87200F2ACCB /* main-合并两个有序链表.m */,
 				0EF3A4A124BF55D900C9AC83 /* main-爬楼梯-斐波那契数.m */,
 				0EF3A4A024BF55D900C9AC83 /* main-循环队列.m */,
