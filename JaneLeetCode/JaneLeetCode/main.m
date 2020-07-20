@@ -72,8 +72,8 @@ struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSArray *subIndex =  subSort(@[@1,@2,@4,@7,@10,@11,@7,@12,@6,@7,@16,@18,@19]);
-        NSLog(@"subIndex==%@",subIndex.description);
+//        NSArray *subIndex =  subSort(@[@1,@2,@4,@7,@10,@11,@7,@12,@6,@7,@16,@18,@19]);
+//        NSLog(@"subIndex==%@",subIndex.description);
     }
     return 0;
 }

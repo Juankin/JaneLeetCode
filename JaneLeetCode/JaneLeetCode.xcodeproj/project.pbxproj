@@ -32,7 +32,7 @@
 		0EF3A4A024BF55D900C9AC83 /* main-循环队列.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-循环队列.m"; sourceTree = "<group>"; };
 		0EF3A4A124BF55D900C9AC83 /* main-爬楼梯-斐波那契数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-爬楼梯-斐波那契数.m"; sourceTree = "<group>"; };
 		CC4B147F24C57D1A00E950B8 /* main-合并两个有序数组.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-合并两个有序数组.m"; sourceTree = "<group>"; };
-		CC4B148124C58EFA00E950B8 /* main的副本2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本2.m"; sourceTree = "<group>"; };
+		CC4B148124C58EFA00E950B8 /* main-二叉树的最近公共祖先.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-二叉树的最近公共祖先.m"; sourceTree = "<group>"; };
 		CC4B148224C58EFA00E950B8 /* main的副本3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main的副本3.m"; sourceTree = "<group>"; };
 		CC4B148324C58EFA00E950B8 /* main-二叉搜索树中的插入操作.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "main-二叉搜索树中的插入操作.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4B148324C58EFA00E950B8 /* main-二叉搜索树中的插入操作.m */,
-				CC4B148124C58EFA00E950B8 /* main的副本2.m */,
+				CC4B148124C58EFA00E950B8 /* main-二叉树的最近公共祖先.m */,
 				CC4B148224C58EFA00E950B8 /* main的副本3.m */,
 				CC4B147F24C57D1A00E950B8 /* main-合并两个有序数组.m */,
 				0E7350B824BCB9D000F5CFB4 /* main.m */,
